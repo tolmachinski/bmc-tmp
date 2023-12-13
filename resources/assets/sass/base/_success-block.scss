@@ -1,0 +1,14 @@
+.success-block{
+    text-align: center;
+
+    &__ttl{
+        padding-bottom: 30px;
+        font: 38px/40px 'Myriad', sans-serif;
+        color: $yellow;
+    }
+
+    &__txt{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

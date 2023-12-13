@@ -1,0 +1,96 @@
+.page-transaction {
+  background-color: $grey;
+  &__header {
+    background-color: $yellow;
+    height: rem-calc(155);
+  }
+
+  &__content {
+    padding: rem-calc(55) 0 rem-calc(100);
+    max-width: rem-calc(1140);
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+      margin-bottom: rem-calc(45);
+      font-size: rem-calc(32);
+      text-align: center;
+    }
+    &--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media (max-width: 1140px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    &__item {
+      flex-basis: 24.38596%;
+      background-color: $white;
+      padding: rem-calc(35) rem-calc(20);
+      display: flex;
+      flex-grow: 1;
+      flex-flow: column wrap;
+      align-items: center;
+      min-height: rem-calc(250);
+      box-sizing: border-box;
+      margin: 0 rem-calc(9) rem-calc(9) 0;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+      &__title {
+        font-size: rem-calc(24);
+        font-weight: bold;
+        line-height: rem-calc(28);
+        margin-bottom: rem-calc(25);
+        text-align: center;
+      }
+      &__subtitle {
+        font-size: rem-calc(16);
+        line-height: rem-calc(20);
+        text-align: center;
+        max-width: rem-calc(200);
+        margin-bottom: rem-calc(20);
+      }
+      &__price {
+        font-size: rem-calc(20);
+        line-height: rem-calc(24);
+        color: $yellow;
+        font-weight: bold;
+        margin: auto 0 0;
+        font-style: italic;
+      }
+      @media (max-width: 1140px) {
+        margin: 0 rem-calc(7) rem-calc(7) 0;
+      }
+      @media (max-width: 992px) {
+        flex-basis: calc(33% - 7px);
+        &:nth-child(4n) {
+          margin-right: rem-calc(7);
+        }
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 787px) {
+        flex-basis: calc(49% - 7px);
+        &:nth-child(3n) {
+          margin-right: rem-calc(7);
+        }
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 480px) {
+        flex-basis: 100%;
+        margin-right: 0;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

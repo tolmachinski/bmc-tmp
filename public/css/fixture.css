@@ -1,0 +1,11 @@
+.main-sidebar .sidebar .user-panel {
+    display: none !important;
+}
+
+.navbar-custom-menu .dropdown.user.user-menu .user-image {
+    display: none !important;
+}
+
+.navbar-custom-menu .dropdown.user.user-menu .user-header img {
+    display: none !important;
+}

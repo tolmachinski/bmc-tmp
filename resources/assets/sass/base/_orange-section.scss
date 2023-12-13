@@ -1,0 +1,108 @@
+.orange-section {
+    width: 100%;
+    min-height: 500px;
+    background: $yellow;
+
+    div {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px 20px 0;
+        position: relative;
+    }
+
+    &.height-auto {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .inner{
+        padding-top: 130px;
+
+        > span{
+            display: block;
+            padding-top: 20px;
+            font: 18px/20px 'Noto Sans', sans-serif;
+            color: #fff;
+        }
+    }
+
+    h1{
+        color: #2b2e33;
+        font: bold 72px/74px 'Podkova', sans-serif!important;
+        display: block;
+    }
+
+    h2{
+        font: bold 48px/52px 'Noto Sans', sans-serif!important;
+        color: #fff;
+    }
+
+    p {
+        padding-top: 130px;
+        font: bold 48px/52px 'Noto Sans', sans-serif;
+        color: #fff;
+
+        span {
+            color: #2b2e33;
+            font: bold 72px/74px 'Podkova', sans-serif;
+            display: block;
+        }
+        
+        .small-size,
+        + span.small-size {
+            font: 18px/20px 'Noto Sans', sans-serif;
+            color: #fff;
+            max-width: 765px;
+            padding-top: 20px;
+        }
+    }
+
+    @media(max-width: 1200px) {
+        div {
+            padding-left: 15px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        display: flex;
+        align-items: center;
+
+        .inner,
+        p {
+            padding-top: 20px;
+        }
+    }
+
+    @media(max-width: 620px) {
+        div {
+            padding: 0 18px 18px;
+        }
+
+        .inner{
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 540px) {
+        p {
+            font-size: 30px;
+            line-height: 34px;
+
+            span {
+                font-size: 55px;
+                line-height: 60px;
+            }
+        }
+
+        h1{
+            font-size: 55px!important;
+            line-height: 60px!important;
+        }
+    
+        h2{
+            font-size: 30px!important;
+            line-height: 34px!important;
+        }
+    }
+}

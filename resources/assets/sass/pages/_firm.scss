@@ -1,0 +1,106 @@
+.firm-page {
+    .owl {
+        &-wrapper {
+            margin-top: 40px;
+        }
+        &-carousel {
+          background-color: #fff;
+          box-sizing: border-box;
+          &__item {
+            //max-width: rem-calc(545);
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 75px;
+            box-sizing: border-box;
+            &__text {
+              margin-bottom: rem-calc(30);
+              font-size: rem-calc(18);
+              line-height: 1.1em;
+            }
+            &__author {
+              font-size: rem-calc(16);
+              span {
+                font-style: italic;
+                font-size: rem-calc(20);
+                line-height: 1.1em;
+              }
+            }
+            @media (max-width: 1200px) {
+              //max-width: rem-calc(420);
+            }
+            @media (max-width: 992px) {
+              //max-width: 75%;
+            }
+            @media (max-width: 787px) {
+              //max-width: 95%;
+            }
+          }
+          @media (max-width: 1200px) {
+            //padding: rem-calc(40) rem-calc(20) rem-calc(50);
+          }
+          @media (max-width: 680px) {
+            //padding: rem-calc(20) rem-calc(15);
+          }
+        }
+        &-nav {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          left: 0;
+          right: 0;
+          top: 50%;
+          transform: translatey(-80%);
+          display: flex;
+          justify-content: space-between;
+          .owl-prev {
+           // left: -60px;
+          }
+          .owl-next {
+            //right: -60px;
+          }
+          .owl-prev,
+          .owl-next {
+            position: relative;
+            height: 80px;
+            display: flex;
+            color: #eeedeb !important;
+            overflow: hidden;
+            &:hover {
+              background-color: transparent;
+            }
+            span {
+              font-size: rem-calc(140);
+              display: inline-block;
+              height: 54px;
+            }
+          }
+          @media (max-width: 787px) {
+            //display: none;
+          }
+        }
+    }
+}
+
+/*
+
+.testimonials {
+  .owl-nav {
+    width: 100%;
+  }
+  .owl-prev {
+    left: -65px;
+    position: absolute;
+    @media (max-width: 992px) {
+      left: -15px;
+    }
+  }
+  .owl-next {
+    right: -5px;
+    position: absolute;
+    @media (max-width: 992px) {
+      left: 68px;
+    }
+  }
+}
+*/

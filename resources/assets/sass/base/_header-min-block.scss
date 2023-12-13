@@ -1,0 +1,33 @@
+.header-min-block {
+    width: 100%;
+    padding: 35px 0;
+    background: $yellow;
+
+    &__inner {
+        width: 100%;
+        max-width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__ttl{
+        font: bold 72px/74px 'Podkova', sans-serif!important;
+        color: #2b2e33;
+    }
+
+    @media(max-width: 1200px) {
+
+    }
+
+    @media(max-width: 768px) {
+
+    }
+
+    @media(max-width: 620px) {
+
+    }
+
+    @media (max-width: 540px) {
+
+    }
+}

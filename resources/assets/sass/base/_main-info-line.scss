@@ -1,0 +1,28 @@
+.main-info-line{
+    padding: 11px 10px;
+    background: $red;
+    color: $white;
+    font-size: 14px;
+
+    &__inner{
+        position: relative;
+        max-width: 1130px;
+        margin: 0 auto;
+        padding-right: 20px;
+    }
+
+    &__close{
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        padding: 5px;
+        margin-top: -12px;
+        fill: $white;
+        background: transparent;
+        cursor: pointer;
+
+        &:hover{
+            fill: $black;
+        }
+    }
+}
